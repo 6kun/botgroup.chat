@@ -10,9 +10,9 @@ export interface Group {
 export const groups: Group[] = [
   {
     id: 'group1',
-    name: '硅碳生命体交流群',
+    name: '写作交流群',
     description: '',
-    members: [ 'ai8', 'ai4', 'ai5', 'ai6', 'ai7'],
+    members: [ 'ai1'， 'ai2'， 'ai3', 'ai4', 'ai5', 'ai6', 'ai7'，'ai8'],
     isGroupDiscussionMode: false
   },
   {
