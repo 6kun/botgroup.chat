@@ -38,7 +38,7 @@ export const modelConfigs = [
   {
     model: "gemini-2.0-pro-exp-02-05",//调度模型
     apiKey: "GEMINI_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://generativelanguage.googleapis.com"
+    baseURL: "https://generativelanguage.googleapis.com/v1beta"
   },
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
