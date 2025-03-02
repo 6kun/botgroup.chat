@@ -36,9 +36,9 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "Gemini 2.0 Flash Experimental",//调度模型
+    model: "gemini-2.0-flash",//调度模型
     apiKey: "GEMINI_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://generativelanguage.googleapis.com"
+    baseURL: "https://generativelanguage.googleapis.com/v1"
   },
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
