@@ -78,7 +78,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai2', 
       name: "剧情", 
       personality: "low_eq",
-      model: modelConfigs[6].model,
+      model: modelConfigs[2].model,
       avatar: "",
       custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责情节冲突"剧情"部分的创作，`
     },
@@ -86,7 +86,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai3', 
       name: "人物", 
       personality: "bj_dad",
-      model: modelConfigs[1].model,
+      model: modelConfigs[2].model,
       avatar: "",
       custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责角色设定"人物"部分的创作，`
     },
@@ -96,7 +96,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "yuanbao",
       model: modelConfigs[2].model,
       avatar: "/img/yuanbao.png",
-      custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责规划"大纲"部分的创作`,
       tags: ["微信", "聊天", "新闻报道", "文字游戏", "生活助手", "娱乐", "信息总结"]
     },
     { 
@@ -105,7 +105,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "doubao",
       model: modelConfigs[3].model,
       avatar: "/img/doubao_new.png",
-      custom_prompt: `你是一个名叫"豆包"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责情节冲突"剧情"部分的创作`,
       tags: ["聊天", "文字游戏", "学生", "娱乐", "抖音"]
     },
     { 
@@ -114,7 +114,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "qianwen",
       model: modelConfigs[0].model,
       avatar: "/img/qwen.jpg",
-      custom_prompt: `你是一个名叫"千问"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责角色设定"人物"部分的创作`,
       tags: ["广告文案","分析数据","文字游戏","信息总结", "聊天"]
     },
     { 
@@ -123,7 +123,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "deepseek-r1",
       model: modelConfigs[4].model,
       avatar: "/img/ds.svg",
-      custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责规划整体结构和方向创作`,
       tags: ["深度推理", "编程", "文字游戏", "数学", "信息总结", "聊天"]
     },
     { 
@@ -132,7 +132,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "glm",
       model: modelConfigs[5].model,
       avatar: "/img/glm.gif",
-      custom_prompt: `你是一个名叫"智谱"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容完成创作并润色`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
     }
   ];
