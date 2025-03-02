@@ -35,6 +35,11 @@ export const modelConfigs = [
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
+  {
+    model: "Gemini 2.0 Flash Experimental",//调度模型
+    apiKey: "GEMINI_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://generativelanguage.googleapis.com"
+  },
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
 
@@ -72,7 +77,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "high_eq",
       model: modelConfigs[2].model,
       avatar: "",  // 如果有头像资源可以添加路径,
-      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责规划整体结构"大纲"部分的创作`
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容提出意见`
     },
     { 
       id: 'ai2', 
@@ -84,11 +89,11 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai3', 
-      name: "人物", 
-      personality: "bj_dad",
-      model: modelConfigs[2].model,
+      name: "谷哥", 
+      personality: "gemini",
+      model: modelConfigs[7].model,
       avatar: "",
-      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责角色设定"人物"部分的创作，`
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容完成创作并润色`
     },
     { 
       id: 'ai4', 
@@ -132,7 +137,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       personality: "glm",
       model: modelConfigs[5].model,
       avatar: "/img/glm.gif",
-      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容完成创作并润色`,
+      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容提出意见`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
     }
   ];
