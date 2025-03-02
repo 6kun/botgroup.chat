@@ -72,18 +72,10 @@ export function shedulerAICharacter(message: string, allTags: string[]): AIChara
 export function generateAICharacters(groupName: string): AICharacter[] {
   return [
     { 
-      id: 'ai1', 
-      name: "大纲", 
-      personality: "high_eq",
-      model: modelConfigs[2].model,
-      avatar: "",  // 如果有头像资源可以添加路径,
-      custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责根据其他人提供的内容提出意见`
-    },
-    { 
       id: 'ai2', 
       name: "剧情", 
       personality: "low_eq",
-      model: modelConfigs[2].model,
+      model: modelConfigs[6].model,
       avatar: "",
       custom_prompt: `你是一个小说家，正在集体写作一本小说，你当前在一个叫"${groupName}" 的群里，负责情节冲突"剧情"部分的创作，`
     },
