@@ -73,7 +73,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
   return [
     { 
       id: 'ai1', 
-      name: "剧情", 
+      name: "V3-剧情", 
       personality: "deepseek-v3",
       model: modelConfigs[1].model,
       avatar: "/img/ds.svg",
@@ -81,7 +81,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai2', 
-      name: "人物", 
+      name: "turbo-人物", 
       personality: "qwen-turbo",
       model: modelConfigs[6].model,
       avatar: "/img/qwen.jpg",
@@ -89,7 +89,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai3', 
-      name: "谷哥", 
+      name: "谷哥-润色", 
       personality: "gemini",
       model: modelConfigs[7].model,
       avatar: "/img/gemini-color.svg",
@@ -97,7 +97,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai4', 
-      name: "元宝", 
+      name: "元宝-大纲", 
       personality: "yuanbao",
       model: modelConfigs[2].model,
       avatar: "/img/yuanbao.png",
@@ -106,7 +106,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai5', 
-      name: "豆包", 
+      name: "豆包-剧情", 
       personality: "doubao",
       model: modelConfigs[3].model,
       avatar: "/img/doubao_new.png",
@@ -115,7 +115,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai6', 
-      name: "千问", 
+      name: "plus-人物", 
       personality: "qianwen",
       model: modelConfigs[0].model,
       avatar: "/img/qwen.jpg",
@@ -124,7 +124,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai7', 
-      name: "DeepSeek", 
+      name: "R1-编辑", 
       personality: "deepseek-r1",
       model: modelConfigs[4].model,
       avatar: "/img/ds.svg",
@@ -133,7 +133,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     { 
       id: 'ai8', 
-      name: "智谱", 
+      name: "智谱-意见", 
       personality: "glm",
       model: modelConfigs[5].model,
       avatar: "/img/glm.gif",
