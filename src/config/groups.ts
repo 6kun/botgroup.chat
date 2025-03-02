@@ -12,7 +12,7 @@ export const groups: Group[] = [
     id: 'group1',
     name: '写作交流群',
     description: '',
-    members: [ 'ai1', 'ai2', 'ai3', 'ai4', 'ai5', 'ai6', 'ai7', 'ai8'],
+    members: [ 'ai4', 'ai5', 'ai6', 'ai7', 'ai8'],
     isGroupDiscussionMode: false
   },
   {
